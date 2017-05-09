@@ -11,6 +11,6 @@ namespace SysClass.Models
         [Key]
         public int ID { get; set; }
         public String Nome { get; set; }
-        public List<Curso> Cursos { get; set; }
+        public virtual ICollection<Curso> Cursos { get; set; }
     }
 }
